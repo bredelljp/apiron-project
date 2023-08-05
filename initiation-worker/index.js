@@ -21,7 +21,7 @@ async function handleRequest(request) {
     });
   } else if (request.method === 'GET') {
     // Handle GET requests
-    return new Response('Hello World!2', { status: 200 });
+    return new Response('Use POST not GET', { status: 200 });
   } else {
     // Return "Not Found" for other request methods and paths
     return new Response('Not Found', { status: 404 });
